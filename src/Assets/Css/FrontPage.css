@@ -1,0 +1,9 @@
+.FrontPage{
+    text-align: center;
+    display: flex;
+    min-height: 77vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(79deg, #62bf92, #8dc9ab 48%, #34de8c);
+}

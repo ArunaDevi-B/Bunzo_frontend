@@ -1,0 +1,35 @@
+body{
+    background-color: whitesmoke;
+}
+.category{
+    
+    height: 100%;
+    width: 48%;
+    margin-top:74px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10px;
+    height: 100%;
+}
+.category_img{
+    cursor: pointer;
+    object-fit:cover;
+    height: 170px;
+    width: 170px;
+    border-radius: 90px;
+    margin-left: 200px;
+}
+.category_name{
+    text-align: center;
+    font-style: oblique;
+    font-weight: lighter;
+    color: black;
+    font-size:larger ;
+    /* margin: 0px; */
+    height: 40px;
+    margin-left: 230px;
+    margin-top: 10px;
+    width: 100px;
+}
