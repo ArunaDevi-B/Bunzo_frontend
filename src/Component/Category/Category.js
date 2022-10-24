@@ -53,7 +53,7 @@ const Category = () => {
                <img src= {data.categoryImg}
                className='category_img' onClick={()=>{
               localStorage.setItem("itemType", data.categoryName);
-               window.location.replace('/item')
+               window.location.replace(`/item?type=${localStorage.itemType}`)
                console.log(data.categoryName)
                 }}/>
              

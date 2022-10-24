@@ -132,7 +132,7 @@ import '../../Assets/Css/Item.css';
 const Item = () => {
   const [ storeState, setStoreState ] = useState([]);
   useEffect(() => {
-fetch (`https://bunzo-order-management.herokuapp.com//items?type=${localStorage.itemType}`, {
+fetch (`https://bunzo-order-management.herokuapp.com/items?type=${localStorage.itemType}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
