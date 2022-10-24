@@ -46,7 +46,7 @@ import '../../Assets/Css/Home.css';
 const Home = () => {
 const [storeState, setStoreState] = useState([]);
   useEffect(()=>{
-  fetch("http://localhost:9000/shops")
+  fetch("https://bunzo-order-management.herokuapp.com/shops")
   .then( async (res)=> {
     const shopData =  await res.json(); 
     setStoreState(shopData);

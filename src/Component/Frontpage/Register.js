@@ -18,7 +18,7 @@ const Register = (props) => {
        console.log(email,password);
        const userdata = {firstName, lastName, emailId: email, dob, city, country, password};
 
-await fetch('http://localhost:9000/register', {
+await fetch('https://bunzo-order-management.herokuapp.com/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
