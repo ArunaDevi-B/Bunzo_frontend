@@ -46,7 +46,7 @@ import '../../Assets/Css/Home.css';
 const Home = () => {
 const [storeState, setStoreState] = useState([]);
   useEffect(()=>{
-  fetch("https://bunzo-order-management.herokuapp.com/shops")
+  fetch("https://bunzo-backend.onrender.com/shops")
   .then( async (res)=> {
     const shopData =  await res.json(); 
     setStoreState(shopData);

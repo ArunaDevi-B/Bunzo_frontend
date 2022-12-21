@@ -8,7 +8,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(email, password);
-    const loginres = await fetch("https://bunzo-order-management.herokuapp.com/login", {
+    const loginres = await fetch("https://bunzo-backend.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

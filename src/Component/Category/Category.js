@@ -37,7 +37,7 @@ import '../../Assets/Css/Category.css';
 const Category = () => {
   const [ storeState, setStoreState ] = useState([]);
   useEffect( ()=> { 
-    fetch ("https://bunzo-order-management.herokuapp.com/categories")
+    fetch ("https://bunzo-backend.onrender.com/categories")
     .then( async (res) => {
       const categoryData = await res.json();
       setStoreState(categoryData);
